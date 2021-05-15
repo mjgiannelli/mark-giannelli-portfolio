@@ -1,12 +1,64 @@
+/* variable declarations */
 :root {
     --primary-color: green;
     --secondary-color: #ccff99;
     --tertiary-color: #ffffcc;
+    --text-color: #000000;
 }
 
+/* get webpage to use entire space */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* create styling for the body */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+}
+
+/* apply styles to header */
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+header h1 {
+    background-color: var(--primary-color);
+    font-size: 48px;
+    font-family: proxima nova;
+}
+
+header nav {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
