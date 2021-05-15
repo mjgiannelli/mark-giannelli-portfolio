@@ -1,9 +1,10 @@
 /* variable declarations */
 :root {
-    --primary-color: green;
+    --primary-color: #000000;
     --secondary-color: #ccff99;
     --tertiary-color: #ffffcc;
-    --text-color: #000000;
+    --text-color: #fff;
+    --text-style: papyrus;
 }
 
 /* get webpage to use entire space */
@@ -11,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--primary-color);
 }
 
 /* create styling for the body */
@@ -25,15 +27,15 @@ header {
     display: flex;
     position: -webkit-sticky;
     position: sticky;
+    top: 0;
     justify-content: space-between;
     flex-wrap: wrap;
-    
 }
 
 header h1 {
     background-color: var(--primary-color);
     font-size: 48px;
-    font-family: proxima nova;
+    font-family: var(--text-style);
 }
 
 header nav {
@@ -47,12 +49,18 @@ header a {
     color: var(--text-color);
 }
 
+header a:hover {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
 header nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
+    font-style: var(--text-style);
 }
 
 header nav ul li a {
@@ -61,4 +69,22 @@ header nav ul li a {
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
+    font-style: var(--text-style);
+}
+
+/* style the "about me" section */
+
+.me {
+    font-size: 20px;
+    text-align: center;
+    font-family: var(--text-style);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    height: 500px;
 }
