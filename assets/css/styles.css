@@ -74,8 +74,8 @@ header nav ul li a {
 
 /* style the "about me" section */
 
-.me {
-    font-size: 20px;
+.title {
+    font-size: 30px;
     text-align: center;
     font-family: var(--text-style);
     display: flex;
@@ -87,4 +87,10 @@ header nav ul li a {
     display: flex;
     align-items: center;
     height: 500px;
+}
+
+/* style the portfolio section */
+.contact-info {
+    display: flex;
+    
 }
