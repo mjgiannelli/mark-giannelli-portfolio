@@ -109,5 +109,24 @@ header nav ul li a {
 }
 
 .placeholder-pic {
-border: var(--text-color);
+border: 10px 10px var(--text-color);
+margin: 10px;
+}
+
+/* style the contact info section */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info a {
+    text-decoration: none;
+    font-family: var(--text-style);
+    color: var(--text-color)
 }
