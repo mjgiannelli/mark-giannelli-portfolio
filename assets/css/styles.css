@@ -83,6 +83,10 @@ header nav ul li a {
     flex-wrap: wrap;
 }
 
+.hero {
+    display: flex;
+}
+
 .bio {
     display: flex;
     align-items: center;
@@ -90,7 +94,20 @@ header nav ul li a {
 }
 
 /* style the portfolio section */
-.contact-info {
+.work {
     display: flex;
     
+}
+
+.picture {
+    height: 300px;
+    width: 300px;
+}
+
+.buttons {
+    background-color: white;
+}
+
+.placeholder-pic {
+border: var(--text-color);
 }
