@@ -134,5 +134,21 @@ margin: 10px;
 /* style the traffic counter */
 .counter {
     text-align: center;
-    margin: 50px;
+    margin-top: 50px;
+}
+
+/* style the footer */
+footer {
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+footer h5 {
+    color: var(--text-color);
+    font-size: 30px;
+    margin: 0;
+    font-family: var(--text-style);
 }
