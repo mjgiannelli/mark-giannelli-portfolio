@@ -130,3 +130,9 @@ margin: 10px;
     font-family: var(--text-style);
     color: var(--text-color)
 }
+
+/* style the traffic counter */
+.counter {
+    text-align: center;
+    margin: 50px;
+}
