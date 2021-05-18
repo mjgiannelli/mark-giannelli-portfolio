@@ -15,6 +15,10 @@
     background-color: var(--primary-color);
 }
 
+.flex {
+    display: flex;
+}
+
 /* create styling for the body */
 body {
     font-family:Arial, Helvetica, sans-serif;
@@ -93,15 +97,32 @@ header nav ul li a {
     height: 500px;
 }
 
+.para1 {
+    align-self: flex-start;
+    text-align: right;
+}
+
+.para2 {
+    align-self: flex-end;
+}
+
 /* style the portfolio section */
-.work {
+.projects {
     display: flex;
-    
+    flex-wrap: wrap;
+    /* align-items: center; */
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.projects div {
+    width: 50%;
 }
 
 .picture {
     height: 300px;
-    width: 300px;
+    width: 100%;
+    margin: 5px;
 }
 
 .buttons {
@@ -109,7 +130,7 @@ header nav ul li a {
 }
 
 .placeholder-pic {
-border: 10px 10px var(--text-color);
+border: 1px solid var(--text-color);
 margin: 10px;
 }
 
@@ -118,6 +139,7 @@ margin: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 100px;
 }
 
 .contact-links {
@@ -128,13 +150,9 @@ margin: 10px;
 .contact-info a {
     text-decoration: none;
     font-family: var(--text-style);
-    color: var(--text-color)
-}
-
-/* style the traffic counter */
-.counter {
-    text-align: center;
-    margin-top: 50px;
+    color: var(--text-color);
+    font-size: 35px;
+    
 }
 
 /* style the footer */
@@ -151,4 +169,13 @@ footer h5 {
     font-size: 30px;
     margin: 0;
     font-family: var(--text-style);
+}
+
+.selfie {
+    height: 400px;
+}
+
+.buttons {
+    margin: 0 auto;
+    width: 100px;
 }
