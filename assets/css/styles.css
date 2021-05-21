@@ -1,7 +1,7 @@
 /* variable declarations */
 :root {
     --primary-color: #000000;
-    --secondary-color: #ccff99;
+    --secondary-color: red;
     --tertiary-color: #ffffcc;
     --text-color: #fff;
     --text-style: papyrus;
@@ -75,7 +75,7 @@ header nav ul li a {
 /* style the "about me" section */
 
 .title {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     font-family: var(--text-style);
     display: flex;
@@ -92,6 +92,7 @@ header nav ul li a {
     display: flex;
     align-items: center;
     height: 500px;
+    margin: 0 100px;
 }
 
 .para1 {
@@ -103,6 +104,12 @@ header nav ul li a {
 .para2 {
     align-self: flex-end;
     width: 50%;
+}
+
+.para1::first-letter, .para2::first-letter {
+    font-size: 20px;
+    font-family: var(--text-style);
+    color: var(--secondary-color);
 }
 
 /* style the portfolio section */
@@ -117,6 +124,7 @@ header nav ul li a {
 .projects h4 {
     text-align: center;
     font-size: 20px;
+    font-family: var(--text-style);
 }
 
 .picture {
@@ -140,6 +148,7 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 25px;
 }
 .picture-2 {
     height: 200px;
@@ -152,7 +161,7 @@ header nav ul li a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .contact-links {
@@ -166,6 +175,11 @@ header nav ul li a {
     color: var(--text-color);
     font-size: 35px;
     
+}
+
+.contact-info a:hover {
+    color: var(--secondary-color);
+    font-weight: bold;
 }
 
 /* style the footer */
@@ -182,6 +196,10 @@ footer h5 {
     font-size: 30px;
     margin: 0;
     font-family: var(--text-style);
+}
+
+footer h5 span {
+    color: var(--secondary-color);
 }
 
 .selfie {
