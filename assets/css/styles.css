@@ -124,13 +124,10 @@ header nav ul li a {
     margin: 5px;
 }
 
-.buttons {
-    background-color: white;
-}
-
-.placeholder-pic {
-border: 1px solid var(--text-color);
-margin: 10px;
+.picture-2 {
+    height: 300px;
+    width: 100%;
+    margin: 5px;
 }
 
 /* style the contact info section */
@@ -172,10 +169,5 @@ footer h5 {
 
 .selfie {
     height: 400px;
-}
-
-.buttons {
-    margin: 0 auto;
-    width: 100px;
 }
 
