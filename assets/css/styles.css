@@ -15,10 +15,6 @@
     background-color: var(--primary-color);
 }
 
-.flex {
-    display: flex;
-}
-
 /* create styling for the body */
 body {
     font-family:Arial, Helvetica, sans-serif;
@@ -85,6 +81,7 @@ header nav ul li a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: 50px 0;
 }
 
 .hero {
@@ -100,10 +97,12 @@ header nav ul li a {
 .para1 {
     align-self: flex-start;
     text-align: right;
+    width: 50%;
 }
 
 .para2 {
     align-self: flex-end;
+    width: 50%;
 }
 
 /* style the portfolio section */
@@ -179,3 +178,4 @@ footer h5 {
     margin: 0 auto;
     width: 100px;
 }
+
