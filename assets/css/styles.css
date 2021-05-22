@@ -37,6 +37,8 @@ header h1 {
     font-family: var(--text-style);
 }
 
+/*apply styles to the nav bar and links*/
+
 header nav {
     background-color: var(--primary-color);
     display: flex;
@@ -88,6 +90,10 @@ header nav ul li a {
     align-items: center;
     height: 500px;
     margin: 0 100px;
+}
+
+.selfie {
+    height: 400px;
 }
 
 .para1 {
@@ -194,10 +200,6 @@ footer h5 {
 
 footer h5 span {
     color: var(--secondary-color);
-}
-
-.selfie {
-    height: 400px;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
