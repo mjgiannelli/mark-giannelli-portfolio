@@ -2,7 +2,6 @@
 :root {
     --primary-color: #000000;
     --secondary-color: red;
-    --tertiary-color: #ffffcc;
     --text-color: #fff;
     --text-style: papyrus;
 }
@@ -69,7 +68,7 @@ header nav ul li a {
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
-    font-style: var(--text-style);
+    font-family: var(--text-style);
 }
 
 /* style the "about me" section */
@@ -82,10 +81,6 @@ header nav ul li a {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 50px 0;
-}
-
-.hero {
-    display: flex;
 }
 
 .bio {
@@ -116,7 +111,6 @@ header nav ul li a {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
     max-width: 70%;
     margin: 0 auto;
 }
@@ -206,3 +200,113 @@ footer h5 span {
     height: 400px;
 }
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+header nav ul li a {
+    font-size: 32px;
+}
+
+.bio {
+    height: 800px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-info a {
+    font-size: 25px; 
+}
+
+.para1 {
+    text-align: left;
+}
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+header h1 {
+    font-size: 36px;
+}
+
+header nav ul li a {
+    font-size: 20px;
+}
+
+.bio {
+    height: 900px;
+    
+}
+
+.picture {
+    height: 300px;
+}
+
+.projects h4 {
+    font-size: 16px;
+}
+
+.picture-2 {
+    height: 160px;
+}
+
+.contact-info a {
+    font-size: 20px; 
+}
+
+.title {
+    font-size: 36px;
+}
+
+}
+
+/* MEDIA QUERY FOR MOBLE AND SMALLER */
+@media screen and (max-width: 575px) {
+
+header h1 {
+    font-size: 28px;
+}
+    
+header nav ul li a {
+    font-size: 16px;
+}
+
+.bio {
+    height: 1100px;
+    
+}
+
+.para1 {
+    width: 75%;
+}
+
+.para2 {
+    width: 75%;
+}
+
+.picture {
+    height: 250px;
+}
+
+.projects h4 {
+    font-size: 12px;
+}
+
+.picture-2 {
+    height: 120px;
+}
+
+.contact-info a {
+    font-size: 16px; 
+}
+
+.title {
+    font-size: 20px;
+}
+
+footer h5 {
+    font-size: 20px;
+}
+
+}
