@@ -24,9 +24,6 @@ body {
 header {
     background-color: var(--primary-color);
     display: flex;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -88,7 +85,7 @@ header nav ul li a {
 .bio {
     display: flex;
     align-items: center;
-    height: 500px;
+    height: 100%;
     margin: 0 100px;
 }
 
@@ -128,7 +125,7 @@ header nav ul li a {
 }
 
 .picture {
-    height: 500px;
+    height: 92%;
     width: 100%;
     margin: 5px;
 }
@@ -160,6 +157,7 @@ header nav ul li a {
 .contact-info {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 50px;
 }
@@ -215,12 +213,30 @@ header nav ul li a {
     justify-content: center;
 }
 
+.secondary-projects {
+    flex: 1 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info {
+    flex: 0 70%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 .contact-info a {
     font-size: 25px; 
 }
 
 .para1 {
     text-align: left;
+    width: 100%;
+}
+
+.para2 {
+    height: 100%;
+    width: 100%;
 }
 
 }
@@ -277,14 +293,6 @@ header nav ul li a {
 .bio {
     height: 1100px;
     
-}
-
-.para1 {
-    width: 75%;
-}
-
-.para2 {
-    width: 75%;
 }
 
 .picture {
