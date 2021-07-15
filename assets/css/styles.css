@@ -388,9 +388,17 @@ footer .col-10 {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .col-10 {
-        width: 75%;
+    #selfie {
+        width: 50%;
         margin: 0 auto;
+    }
+
+    #name {
+        width: 100%;
+    }
+
+    .col-3 {
+        width: 33%;
     }
 
     #contact-info {
