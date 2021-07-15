@@ -10,4 +10,4 @@
 ![Mark's Portfolio](assets/images/mark-portfolio-sh.png)
 
 ## Link to Portfolio Website
-[Portfolio Deployed Website](https://mjgiannelli.github.io/mark-giannelli-portfolio/)
+[Portfolio Deployed Website](https://www.markgiannelli.com/)
