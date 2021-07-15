@@ -187,7 +187,19 @@
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (min-width: 0px) {
-    
+
+body {
+    background-color: var(--primary-color);
+}
+
+.col-3 {
+    width: 100%;
+    text-align: center;
+}
+
+.col-7 {
+    width: 100%;
+}
 /* apply styles to header */
 header {
     background-color: var(--primary-color);
@@ -195,6 +207,7 @@ header {
 
 header h1 {
     background-color: var(--primary-color);
+    margin: 1rem 0;
 }
 
 /*apply styles to the nav bar and links*/
@@ -203,9 +216,15 @@ header nav {
     background-color: var(--primary-color);
 }
 
+br {
+    height: 2%;
+}
+
 header a {
     text-decoration: none;
     color: var(--text-color);
+    display: inline-block;
+    font-size: 4rem;
 }
 
 header a:hover {
@@ -220,6 +239,7 @@ header nav ul {
 header nav ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-family: var(--text-style);
+    font-size: 3rem;
 }
 
 /* style the "about me" section */
