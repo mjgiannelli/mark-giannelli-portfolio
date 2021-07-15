@@ -352,7 +352,10 @@ footer .col-10 {
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-   
+   .picture {
+    width: 40rem;
+    height: 28rem;
+   }
 }
 
 /* // Medium devices (tablets, 768px and up) */
