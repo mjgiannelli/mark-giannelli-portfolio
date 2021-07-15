@@ -10,151 +10,146 @@
 </head>
 
 <body>
-    <header>
+    <header class="box">
         <!-- header of webpage -->
-        <h1>
-            <a href="https://mjgiannelli.github.io/mark-giannelli-portfolio/">Mark Giannelli <br /> Portfolio</a>
-        </h1>
-        <!-- navigation bar -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="row">
+            <h1 class='col-3'>
+                <a href="https://mjgiannelli.github.io/mark-giannelli-portfolio/">Mark Giannelli <br /> Portfolio</a>
+            </h1>
+            <!-- navigation bar -->
+            <nav class="col-7">
+                <div class="box">
+                    <ul class="row">
+                        <li class="col-3">
+                            <a href="#about-me">About Me</a>
+                        </li>
+                        <li class="col-3">
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="col-3">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <!-- create the background image/about me section -->
-    <section class="hero">
-        <article class="me">
-            <h2 id="about-me" class="title">About Me</h2>
-            <div class="bio">
-                <p class="para1">
-                    Accountant turned Web Developer <span>&copy;</span> 2021.
-                </p>
-                <div>
-                    <img class="selfie" src="assets/images/Me-black-background-3.jpg"
-                        alt="professional selfie for Mark Giannelli">
-                </div>
-                <p class="para2">
-                    I've found my passsion in life. I would do this work for free. This career satiates everything I
-                    look for in a position. It's challenging, logic based and always evolving keeping me in the
-                    perpetual
-                    state of being a student. I wake up every morning thrilled to code!
-                </P>
-            </div>
-        </article>
-    </section>
+    <article class="box">
+        <h2 id="about-me" class="title">About Me</h2>
+        <div class="row flex column">
+            <p class="col-10">
+                Accountant turned Web Developer <span>&copy;</span> 2021.
+            </p>
+            <img id='selfie' class="col-10" src="assets/images/Me-black-background-3.jpg"
+                alt="professional selfie for Mark Giannelli">
+            <p class="col-10">
+                I've found my passsion in life. I would do this work for free. This career satiates everything I
+                look for in a position. It's challenging, logic based and always evolving keeping me in the
+                perpetual
+                state of being a student. I wake up every morning thrilled to code!
+            </P>
+        </div>
+    </article>
 
     <!-- create the portfolio section -->
-    <section>
-        <h3 id="portfolio" class="title">Portfolio</h3>
-        <div id="front-end">
-            <h4>Front End</h4>
-            <h5>HTML, CSS & SASS</h5>
-            <div id="html-css">
-                <div>
-                    <h6>Run Buddy</h6>
-                    <a href="https://mjgiannelli.github.io/run-buddy/" target="_blank"><img class="picture"
-                            src="./assets/images/run-buddy.png" alt="Run Buddy"></a>
-                </div>
-                <h6>Mark Box (Built with SASS)</h6>
+    <section class="box">
+        <h2 id="portfolio" class="title">Portfolio</h2>
+        <h3>Front End</h3>
+        <h4>HTML, CSS & SASS</h4>
+        <div class="row" id="html-css">
+            <div class="col-5">
+                <h5>Run Buddy</h5>
+                <a href="https://mjgiannelli.github.io/run-buddy/" target="_blank"><img class="picture"
+                        src="./assets/images/run-buddy.png" alt="Run Buddy"></a>
+            </div>
+            <div class="col-5">
+                <h5>Mark Box (Built with SASS)</h5>
                 <a href="https://github.com/mjgiannelli/mark-box/blob/main/assets/css/mark-box.scss"
                     target="_blank"><img class="picture" src="./assets/images/placeholder.png" alt="Mark Box"></a>
             </div>
-            <div id="javascript">
-                <div class="projects">
-                    <h5>JavaScript</h5>
-                    <div>
-                        <h6>Movie Date App!</h6>
-                        <a href="https://mjgiannelli.github.io/movie_date/" target="_blank"><img class="picture"
-                                src="./assets/images/movie-date-homepage.png" alt="Movie Date"></a>
-                    </div>
-                    <div class="align">
-                        <h6>Robot Gladiators</h6>
-                        <a href="https://mjgiannelli.github.io/robot-gladiators/" target="_blank"><img class="picture-2"
-                                src="assets/images/robot-gladiators.jpg" alt="robot gladiators"></a>
-                    </div>
-                    <div class="align">
-                        <h6>Weather Dashboard</h6>
-                        <a href="https://mjgiannelli.github.io/challenge-6-weather-dashboard/" target="_blank"><img
-                                class="picture-2" src="assets/images/weather_homepage.png" alt="weather dashboard"></a>
-                    </div>
-                    <div class="align">
-                        <h6>Git It Done</h6>
-                        <a href="https://mjgiannelli.github.io/git-it-done/" target="_blank"><img class="picture-2"
-                                src="assets/images/placeholder.png" alt="Git it Done"></a>
-                    </div>
-
-                </div>
-
-                <div id="back-end">
-                    <h4>Back End</h4>
-                    <h5>Node.js</h5>
-                    <div id="node">
-                        <div>
-                            <h6>Team Profile Generator</h6>
-                            <!-- TODO: add links to video tutorial -->
-                            <a href="https://github.com/mjgiannelli/challenge-10-team-profile-generator" target="_blank"><img class="picture"
-                                    src="./assets/images/placeholder.png" alt="Team Profile Generator"></a>
-                        </div>
-                        <h6>Professional README Generator</h6>
-                          <!-- TODO: add links to video tutorial -->
-                        <a href="https://github.com/mjgiannelli/challenge-9-professional-README-generator"
-                            target="_blank"><img class="picture" src="./assets/images/placeholder.png"
-                                alt="README Generator"></a>
-                    </div>
-                    <div id="full-stack">
-                        <h4>Full Stack</h4>
-                        <h5>Node.js & Express</h5>
-                        <div id="node">
-                            <div>
-                                <h6>Zoo Keepr</h6>
-                                <!-- TODO: add links to video tutorial -->
-                                <a href="https://warm-wave-67006.herokuapp.com/" target="_blank"><img class="picture"
-                                        src="./assets/images/placeholder.png" alt="Zoo Keepr"></a>
-                            </div>
-                            <h6>Note Taker</h6>
-                              <!-- TODO: add links to video tutorial -->
-                            <a href="https://shrouded-escarpment-97500.herokuapp.com/"
-                                target="_blank"><img class="picture" src="./assets/images/placeholder.png"
-                                    alt="Note Taker"></a>
-                        </div>
-                </div>
+        </div>
+        <h4>JavaScript</h4>
+        <div class='row' id="javascript">
+            <div class='col-2'>
+                <h5>Movie Date App!</h5>
+                <a href="https://mjgiannelli.github.io/movie_date/" target="_blank"><img class="picture"
+                        src="./assets/images/movie-date-homepage.png" alt="Movie Date"></a>
+            </div>
+            <div class="col-2">
+                <h5>Robot Gladiators</h5>
+                <a href="https://mjgiannelli.github.io/robot-gladiators/" target="_blank"><img class="picture"
+                        src="assets/images/robot-gladiators.jpg" alt="robot gladiators"></a>
+            </div>
+            <div class="col-2">
+                <h5>Weather Dashboard</h5>
+                <a href="https://mjgiannelli.github.io/challenge-6-weather-dashboard/" target="_blank"><img
+                        class="picture-2" src="assets/images/weather_homepage.png" alt="weather dashboard"></a>
+            </div>
+            <div class="col-2">
+                <h5>Git It Done</h5>
+                <a href="https://mjgiannelli.github.io/git-it-done/" target="_blank"><img class="picture"
+                        src="assets/images/placeholder.png" alt="Git it Done"></a>
             </div>
         </div>
+        <h3>Back End</h3>
+        <h4>Node.js</h4>
+        <div class='row' id="back-end">
+            <div class='col-5'>
+                <h5>Team Profile Generator</h5>
+                <!-- TODO: add links to video tutorial -->
+                <a href="https://github.com/mjgiannelli/challenge-10-team-profile-generator" target="_blank"><img
+                        class="picture" src="./assets/images/placeholder.png" alt="Team Profile Generator"></a>
+            </div>
+            <div class="col-5">
+                <h5>Professional README Generator</h5>
+                <!-- TODO: add links to video tutorial -->
+                <a href="https://github.com/mjgiannelli/challenge-9-professional-README-generator" target="_blank"><img
+                        class="picture" src="./assets/images/placeholder.png" alt="README Generator"></a>
+            </div>
         </div>
-
+        <h3>Full Stack</h3>
+        <h4>Node.js & Express</h4>
+        <div class='row' id="full-stack">
+            <div class='col-5'>
+                <h5>Zoo Keepr</h5>
+                <!-- TODO: add links to video tutorial -->
+                <a href="https://warm-wave-67006.herokuapp.com/" target="_blank"><img class="picture"
+                        src="./assets/images/placeholder.png" alt="Zoo Keepr"></a>
+            </div>
+            <div class="col-5">
+                <h5>Note Taker</h5>
+                <!-- TODO: add links to video tutorial -->
+                <a href="https://shrouded-escarpment-97500.herokuapp.com/" target="_blank"><img class="picture"
+                        src="./assets/images/placeholder.png" alt="Note Taker"></a>
+            </div>
+        </div>
     </section>
 
     <!-- create the contact info section -->
-    <section class="contact-info">
-        <h4 id="contact" class="title">Contact Me:</h4>
+    <section class="box">
+        <div class="row">
+            <h2 id="contact" class="col-2">Contact Me:</h2>
 
-        <a href="tel:2036458595">203-645-8595</a>
+            <a href="tel:2036458595" class="col-2">203-645-8595</a>
 
-        <a href="mailto:giannelli.mark@gmail.com">giannelli.mark@gmail.com</a>
+            <a href="mailto:giannelli.mark@gmail.com" class="col-2">giannelli.mark@gmail.com</a>
 
-        <a href="https://github.com/mjgiannelli" target="_blank">Github</a>
+            <a href="https://github.com/mjgiannelli" target="_blank" class="col-2">Github</a>
 
-        <a href="https://www.linkedin.com/in/mark-giannelli-mba-458585108/" target="_blank">Linkedin</a>
-
-
-
+            <a href="https://www.linkedin.com/in/mark-giannelli-mba-458585108/" target="_blank"
+                class="col-2">Linkedin</a>
+        </div>
     </section>
 
     <!-- create the footer -->
-    <footer>
-        <h6>
-            <span>&copy;</span> 2021 Designs by Gia, LLC.
-        </h6>
+    <footer class="box">
+        <div class="row">
+            <h6 class="col-10">
+                <span>&copy;</span> 2021 Designs by Gia, LLC.
+            </h6>
+        </div>
     </footer>
 </body>
 
