@@ -187,7 +187,60 @@
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (min-width: 0px) {
-    
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.col-2, .col-3, .col-5, .col-7 {
+    width: 100%;
+    text-align: center;
+}
+
+.col-2 {
+    text-align: center;
+    width: 100%;
+}
+
+.col-3 {
+    width: 100%;
+    text-align: center;
+}
+
+.col-5 {
+    width: 100%;
+    text-align: center;
+}
+
+.col-7 {
+    width: 100%;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3, h4, h5 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 3rem;
+    margin: 3rem 0;
+    color: var(--secondary-color);
+}
+
+h4 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+h5 {
+    font-size: 2rem;
+}
+
 /* apply styles to header */
 header {
     background-color: var(--primary-color);
@@ -195,6 +248,7 @@ header {
 
 header h1 {
     background-color: var(--primary-color);
+    margin: 6rem 0;
 }
 
 /*apply styles to the nav bar and links*/
@@ -206,6 +260,8 @@ header nav {
 header a {
     text-decoration: none;
     color: var(--text-color);
+    display: inline-block;
+    font-size: 4rem;
 }
 
 header a:hover {
@@ -215,118 +271,237 @@ header a:hover {
 
 header nav ul {
     font-style: var(--text-style);
+    list-style-type: none;
 }
 
 header nav ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-family: var(--text-style);
+    font-size: 3rem;
+}
+
+hr {
+    margin: 6rem 0;
 }
 
 /* style the "about me" section */
 
 .title {
     font-family: var(--text-style);
+    text-align: center;
+    margin-bottom: 6rem;
 }
 
-.bio {
-
+p {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.75rem;
+    margin: .5rem 0;
 }
 
-.selfie {
-    
+#bio {
+    margin-top: 3rem;
 }
 
-.para1 {
-    
-}
-
-.para2 {
-    
-}
-
-.para1::first-letter, .para2::first-letter {
-    
-    font-family: var(--text-style);
+span {
     color: var(--secondary-color);
+    font-size: 2rem;
 }
 
 /* style the portfolio section */
-.projects {
-   
-}
-
-.projects h4 {
-    font-family: var(--text-style);
-}
 
 .picture {
-    
+    width: 28.3rem;
+    height: 23.5rem;
+    margin-bottom: 2rem;
 }
 
-.picture:hover, .picture-2:hover {
+.picture:hover {
     border: 10px solid var(--text-color);
 }
 
-.align {
-   
-}
-
-.secondary-projects {
-    
-}
 
 /* style the contact info section */
-.contact-info {
-   
-}
 
-.contact-links {
-    
-}
-
-.contact-info a {
+#contact-info a {
     text-decoration: none;
     font-family: var(--text-style);
     color: var(--text-color);
-    
+    margin: 1rem 0;
+    font-size: 2rem;
 }
 
-.contact-info a:hover {
+#contact-info a:hover {
     color: var(--secondary-color);
     font-weight: bold;
 }
 
 /* style the footer */
-footer {
-    
-}
 
-footer h5 {
+footer h6 {
     color: var(--text-color);
     font-family: var(--text-style);
+    font-size: 2rem;
 }
 
-footer h5 span {
-    color: var(--secondary-color);
+footer .col-10 {
+    text-align: center;
 }
+
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-   
+   .picture {
+        width: 40rem;
+        height: 28rem;
+   }
+
+   #profile-gen {
+        width: 40rem;
+        height: 32rem;
+    }
+
+    #weather-dash {
+        width: 45rem;
+        height: 22rem;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .picture {
+        width: 50rem;
+        height: 30rem;
+    }
 
+    #profile-gen {
+        width: 50rem;
+        height: 35rem;
+    }
+
+    #weather-dash {
+        width: 60rem;
+        height: 25rem;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    #selfie {
+        width: 50%;
+        margin: 0 auto;
+    }
 
+    #name {
+        width: 100%;
+    }
+
+    .col-3 {
+        width: 33%;
+    }
+
+    #contact-info {
+        width: 100%;
+    }
+    .contact-row {
+       align-items: center;
+       justify-content: space-evenly;
+    }
+
+    #contact {
+        width: 20%;
+    }
+
+    #number {
+        width: 15%;
+    }
+
+    #email {
+        width: 30%;
+    }
+    
+    #github {
+        width: 12%;
+    }
+
+    #linkedin {
+        width: 12%
+    }
+
+    footer .col-10 {
+        text-align: right;
+    }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    header a {
+        font-size: 6rem;
+    }
 
+    header nav ul li a {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 2.5rem;
+    }
+
+    .col-5 {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .picture {
+        width: 45rem;
+    }
+
+    .col-2 {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    #weather-dash {
+        width: 45rem;
+    }
+
+    #movie-date {
+        height: 25rem;
+    }
+
+    #profile-gen {
+        width: 45rem;
+        height: 30rem;
+    }
+
+    #contact-info a {
+        font-size: 3rem;
+    }
+
+    #contact {
+        margin: 0;
+        width: 20%;
+    }
+
+    #number {
+        width: 17%;
+    }
+
+    #email {
+        width: 32%;
+    }
+    
+    #github {
+        width: 10%;
+    }
+
+    #linkedin {
+        width: 12%
+    }
+
+    footer .col-10 {
+        font-size: 3rem;
+    }
+    
 }

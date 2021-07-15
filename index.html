@@ -13,8 +13,9 @@
     <header class="box">
         <!-- header of webpage -->
         <div class="row">
-            <h1 class='col-3'>
-                <a href="https://mjgiannelli.github.io/mark-giannelli-portfolio/">Mark Giannelli <br /> Portfolio</a>
+            <h1 id='name' class='col-3'>
+                <a href="https://mjgiannelli.github.io/mark-giannelli-portfolio/" id='home'>Mark Giannelli <br />
+                    Portfolio</a>
             </h1>
             <!-- navigation bar -->
             <nav class="col-7">
@@ -35,6 +36,8 @@
         </div>
     </header>
 
+    <hr>
+
     <!-- create the background image/about me section -->
     <article class="box">
         <h2 id="about-me" class="title">About Me</h2>
@@ -44,7 +47,7 @@
             </p>
             <img id='selfie' class="col-10" src="assets/images/Me-black-background-3.jpg"
                 alt="professional selfie for Mark Giannelli">
-            <p class="col-10">
+            <p id='bio' class="col-10">
                 I've found my passsion in life. I would do this work for free. This career satiates everything I
                 look for in a position. It's challenging, logic based and always evolving keeping me in the
                 perpetual
@@ -53,10 +56,52 @@
         </div>
     </article>
 
+    <hr>
+
     <!-- create the portfolio section -->
     <section class="box">
         <h2 id="portfolio" class="title">Portfolio</h2>
+        <h3>Full Stack</h3>
+        <h4>Node.js & Express</h4>
+        <div class='row' id="full-stack">
+            <div class='col-5'>
+                <h5>Zoo Keepr</h5>
+                <!-- TODO: add links to video tutorial -->
+                <a href="https://warm-wave-67006.herokuapp.com/" target="_blank"><img class="picture"
+                        src="./assets/images/zookeeper.png" alt="Zoo Keepr"></a>
+            </div>
+            <div class="col-5">
+                <h5>Note Taker</h5>
+                <!-- TODO: add links to video tutorial -->
+                <a href="https://shrouded-escarpment-97500.herokuapp.com/" target="_blank"><img class="picture"
+                        src="./assets/images/note-taker.png" alt="Note Taker"></a>
+            </div>
+        </div>
         <h3>Front End</h3>
+        <h4>JavaScript</h4>
+        <div class='row' id="javascript">
+            <div class="col-2">
+                <h5>Weather Dashboard</h5>
+                <a href="https://mjgiannelli.github.io/challenge-6-weather-dashboard/" target="_blank"><img
+                        id='weather-dash' class="picture" src="assets/images/weather_homepage.png"
+                        alt="weather dashboard"></a>
+            </div>
+            <div class='col-2'>
+                <h5>Movie Date App!</h5>
+                <a href="https://mjgiannelli.github.io/movie_date/" target="_blank"><img id='movie-date' class="picture"
+                        src="./assets/images/movie-date-homepage.png" alt="Movie Date"></a>
+            </div>
+            <div class="col-2">
+                <h5>Git It Done</h5>
+                <a href="https://mjgiannelli.github.io/git-it-done/" target="_blank"><img class="picture"
+                        src="assets/images/git-it-done.png" alt="Git it Done"></a>
+            </div>
+            <div class="col-2">
+                <h5>Work Day Scheduler</h5>
+                <a href="https://mjgiannelli.github.io/challenge-5-work-day-scheduler//" target="_blank"><img
+                        class="picture" src="assets/images/work-day-scheduler.png" alt="robot gladiators"></a>
+            </div>
+        </div>
         <h4>HTML, CSS & SASS</h4>
         <div class="row" id="html-css">
             <div class="col-5">
@@ -65,83 +110,49 @@
                         src="./assets/images/run-buddy.png" alt="Run Buddy"></a>
             </div>
             <div class="col-5">
-                <h5>Mark Box (Built with SASS)</h5>
+                <h5>Mark Box (Custom CSS Built with SASS)</h5>
                 <a href="https://github.com/mjgiannelli/mark-box/blob/main/assets/css/mark-box.scss"
-                    target="_blank"><img class="picture" src="./assets/images/placeholder.png" alt="Mark Box"></a>
-            </div>
-        </div>
-        <h4>JavaScript</h4>
-        <div class='row' id="javascript">
-            <div class='col-2'>
-                <h5>Movie Date App!</h5>
-                <a href="https://mjgiannelli.github.io/movie_date/" target="_blank"><img class="picture"
-                        src="./assets/images/movie-date-homepage.png" alt="Movie Date"></a>
-            </div>
-            <div class="col-2">
-                <h5>Robot Gladiators</h5>
-                <a href="https://mjgiannelli.github.io/robot-gladiators/" target="_blank"><img class="picture"
-                        src="assets/images/robot-gladiators.jpg" alt="robot gladiators"></a>
-            </div>
-            <div class="col-2">
-                <h5>Weather Dashboard</h5>
-                <a href="https://mjgiannelli.github.io/challenge-6-weather-dashboard/" target="_blank"><img
-                        class="picture-2" src="assets/images/weather_homepage.png" alt="weather dashboard"></a>
-            </div>
-            <div class="col-2">
-                <h5>Git It Done</h5>
-                <a href="https://mjgiannelli.github.io/git-it-done/" target="_blank"><img class="picture"
-                        src="assets/images/placeholder.png" alt="Git it Done"></a>
+                    target="_blank"><img class="picture" src="./assets/images/mark-box.jpg" alt="Mark Box"></a>
             </div>
         </div>
         <h3>Back End</h3>
         <h4>Node.js</h4>
         <div class='row' id="back-end">
             <div class='col-5'>
-                <h5>Team Profile Generator</h5>
+                <h5>Team Profile Generator (OOP)</h5>
                 <!-- TODO: add links to video tutorial -->
                 <a href="https://github.com/mjgiannelli/challenge-10-team-profile-generator" target="_blank"><img
-                        class="picture" src="./assets/images/placeholder.png" alt="Team Profile Generator"></a>
+                        id='profile-gen' class="picture" src="./assets/images/team-profile-generator.png"
+                        alt="Team Profile Generator"></a>
             </div>
             <div class="col-5">
                 <h5>Professional README Generator</h5>
                 <!-- TODO: add links to video tutorial -->
                 <a href="https://github.com/mjgiannelli/challenge-9-professional-README-generator" target="_blank"><img
-                        class="picture" src="./assets/images/placeholder.png" alt="README Generator"></a>
-            </div>
-        </div>
-        <h3>Full Stack</h3>
-        <h4>Node.js & Express</h4>
-        <div class='row' id="full-stack">
-            <div class='col-5'>
-                <h5>Zoo Keepr</h5>
-                <!-- TODO: add links to video tutorial -->
-                <a href="https://warm-wave-67006.herokuapp.com/" target="_blank"><img class="picture"
-                        src="./assets/images/placeholder.png" alt="Zoo Keepr"></a>
-            </div>
-            <div class="col-5">
-                <h5>Note Taker</h5>
-                <!-- TODO: add links to video tutorial -->
-                <a href="https://shrouded-escarpment-97500.herokuapp.com/" target="_blank"><img class="picture"
-                        src="./assets/images/placeholder.png" alt="Note Taker"></a>
+                        class="picture" src="./assets/images/readme-gen.jpg" alt="README Generator"></a>
             </div>
         </div>
     </section>
+
+    <hr>
 
     <!-- create the contact info section -->
-    <section class="box">
-        <div class="row">
+    <section id='contact-info' class="box">
+        <div class="row contact-row">
             <h2 id="contact" class="col-2">Contact Me:</h2>
 
-            <a href="tel:2036458595" class="col-2">203-645-8595</a>
+            <a href="tel:2036458595" class="col-2" id='number'>203-645-8595</a>
 
-            <a href="mailto:giannelli.mark@gmail.com" class="col-2">giannelli.mark@gmail.com</a>
+            <a href="mailto:giannelli.mark@gmail.com" class="col-2" id='email'>giannelli.mark@gmail.com</a>
 
-            <a href="https://github.com/mjgiannelli" target="_blank" class="col-2">Github</a>
+            <a href="https://github.com/mjgiannelli" target="_blank" class="col-2" id='github'>Github</a>
 
             <a href="https://www.linkedin.com/in/mark-giannelli-mba-458585108/" target="_blank"
-                class="col-2">Linkedin</a>
+                class="col-2" id='linkedin'>Linkedin</a>
         </div>
     </section>
+
+    <hr>
 
     <!-- create the footer -->
     <footer class="box">
