@@ -364,7 +364,7 @@ footer .col-10 {
 
     #weather-dash {
         width: 45rem;
-        height: 28rem;
+        height: 22rem;
     }
 }
 
@@ -382,13 +382,31 @@ footer .col-10 {
 
     #weather-dash {
         width: 60rem;
-        height: 30rem;
+        height: 25rem;
     }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .col-10 {
+        width: 75%;
+        margin: 0 auto;
+    }
 
+    #contact-info {
+        width: 100%;
+    }
+    .contact-row {
+       align-items: center;
+    }
+
+    .contact {
+        width:20%;
+    }
+    
+    footer .col-10 {
+        text-align: right;
+    }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
