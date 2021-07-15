@@ -436,5 +436,72 @@ footer .col-10 {
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    header a {
+        font-size: 6rem;
+    }
 
+    header nav ul li a {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 2.5rem;
+    }
+
+    .col-5 {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .picture {
+        width: 45rem;
+    }
+
+    .col-2 {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    #weather-dash {
+        width: 45rem;
+    }
+
+    #movie-date {
+        height: 25rem;
+    }
+
+    #profile-gen {
+        width: 45rem;
+        height: 30rem;
+    }
+
+    #contact-info a {
+        font-size: 3rem;
+    }
+
+    #contact {
+        margin: 0;
+        width: 20%;
+    }
+
+    #number {
+        width: 17%;
+    }
+
+    #email {
+        width: 32%;
+    }
+    
+    #github {
+        width: 10%;
+    }
+
+    #linkedin {
+        width: 12%
+    }
+
+    footer .col-10 {
+        font-size: 3rem;
+    }
+    
 }
