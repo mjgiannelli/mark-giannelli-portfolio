@@ -353,9 +353,19 @@ footer .col-10 {
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
    .picture {
-    width: 40rem;
-    height: 28rem;
+        width: 40rem;
+        height: 28rem;
    }
+
+   #profile-gen {
+        width: 40rem;
+        height: 32rem;
+    }
+
+    #weather-dash {
+        width: 45rem;
+        height: 28rem;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
