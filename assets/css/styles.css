@@ -406,12 +406,29 @@ footer .col-10 {
     }
     .contact-row {
        align-items: center;
+       justify-content: space-evenly;
     }
 
-    .contact {
-        width:20%;
+    #contact {
+        width: 20%;
+    }
+
+    #number {
+        width: 15%;
+    }
+
+    #email {
+        width: 30%;
     }
     
+    #github {
+        width: 12%;
+    }
+
+    #linkedin {
+        width: 12%
+    }
+
     footer .col-10 {
         text-align: right;
     }
