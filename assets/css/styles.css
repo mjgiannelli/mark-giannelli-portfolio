@@ -232,13 +232,13 @@ h3 {
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
     color: var(--secondary-color);
 }
 
 h5 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 /* apply styles to header */
@@ -322,22 +322,16 @@ span {
 
 
 /* style the contact info section */
-.contact-info {
-   
-}
 
-.contact-links {
-    
-}
-
-.contact-info a {
+#contact-info a {
     text-decoration: none;
     font-family: var(--text-style);
     color: var(--text-color);
-    
+    margin: 1rem 0;
+    font-size: 2rem;
 }
 
-.contact-info a:hover {
+#contact-info a:hover {
     color: var(--secondary-color);
     font-weight: bold;
 }
@@ -347,14 +341,16 @@ footer {
     
 }
 
-footer h5 {
+footer h6 {
     color: var(--text-color);
     font-family: var(--text-style);
+    font-size: 2rem;
 }
 
-footer h5 span {
-    color: var(--secondary-color);
+footer .col-10 {
+    text-align: center;
 }
+
 }
 
 /* // Small devices (landscape phones, 576px and up) */
