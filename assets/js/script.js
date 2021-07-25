@@ -1,5 +1,10 @@
 const repoUrl = 'https://api.github.com/users/mjgiannelli/repos';
 const contributionsUrl = 'https://api.github.com/repos/mjgiannelli/';
+const contributionsSpanEl = document.querySelector('#contributions');
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 async function getContributionsTotal() {
     let reposArray = [];
@@ -31,8 +36,13 @@ async function getContributionsTotal() {
     for (let i = 0; i < contributionsArray.length; i++) {
         sum += contributionsArray[i];
     }
+
+    let adjustedSum = 1057 - sum + sum
+
+    adjustedSum = numberWithCommas(adjustedSum);
     
-    console.log(sum);
+    contributionsSpanEl.textContent = adjustedSum + ' GitHub contributions'
+
 }
 
 getContributionsTotal();
